@@ -1,0 +1,91 @@
+body{
+    margin: 0;
+}
+.BG{
+    width: 100%;
+    height: 100%;
+    background: #5E90AF;
+    animation-name: change_color;
+    animation-duration: 15s;
+    animation-iteration-count: infinite
+}
+.ground-1{
+    background-color: green;
+    width: 800px;
+    height: 200px;
+    border-radius: 50% 50% 0 0;
+    position: absolute;
+    bottom:0;
+    left: 0;
+}
+.ground-2{
+    background-color: yellow;
+    width: 600px;
+    height: 150px;
+    border-radius: 50% 50% 0 0;
+    position: absolute;
+    bottom:0;
+    left:50;
+}
+.ground-3{
+    background-color:forestgreen;
+    width: 800px;
+    height: 200px;
+    border-radius: 50% 50% 0 0;
+    position: absolute;
+    bottom:0;
+    right:0;
+}
+.sun{
+    background-color:orange;
+    width: 120px;
+    height: 120px;
+    border-radius:50%;
+    box-shadow: 0 0 35px 20px yellow;
+    margin:auto;
+    animation-name: jump;
+    animation-duration: 15s;
+    animation-direction: normal;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite
+}
+
+@keyframes jump{
+    0%{ }
+    25%{
+       transform: translate(0,540px);
+       background-color:gold;
+       box-shadow: 0 0 35px 20px yellow;
+    }
+    50%{
+       transform: translate(0,0);
+       background-color:white;
+       box-shadow: 0 0 50px 10px white;  
+    }
+    75%{
+        transform: translate(0,540px);
+        background-color:white;
+        box-shadow: 0 0 50px 10px white;
+    }
+    100%{
+        transform: translate(0,0);
+        background-color:orange;
+        box-shadow: 0 0 35px 20px yellow;
+    }
+}
+
+@keyframes change_color{
+    0%{ }
+    25%{
+       background-color: #5E90AF;
+    }
+    50%{
+       background-color:#000D14;  
+    }
+    75%{
+        background-color:#000D14;
+    }
+    100%{
+        background-color:#5E90AF;
+    }
+}
