@@ -46,29 +46,31 @@ body{
     animation-name: jump;
     animation-duration: 15s;
     animation-direction: normal;
-    animation-timing-function: ease-in;
+    animation-timing-function: ease-in-out;
     animation-iteration-count: infinite
 }
 
 @keyframes jump{
-    0%{ }
+    0%{ 
+        transform: translate(0,50px);
+    }
     25%{
-       transform: translate(0,540px);
+       transform: translate(0,510px);
        background-color:gold;
        box-shadow: 0 0 35px 20px yellow;
     }
     50%{
-       transform: translate(0,0);
+       transform: translate(0,50px);
        background-color:white;
        box-shadow: 0 0 50px 10px white;  
     }
     75%{
-        transform: translate(0,540px);
+        transform: translate(0,510px);
         background-color:white;
         box-shadow: 0 0 50px 10px white;
     }
     100%{
-        transform: translate(0,0);
+        transform: translate(0,50px);
         background-color:orange;
         box-shadow: 0 0 35px 20px yellow;
     }
